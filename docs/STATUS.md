@@ -1,4 +1,4 @@
-# CloudDrive Project Status
+# CloudDrive Project Status this is the project status
 
 **Decisions Made:**
 -   **App Type:** macOS menu bar app (SwiftUI)
