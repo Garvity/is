@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>13</integer>
+	<key>logs</key>
+	<dict>
+		<key>2F2D7587-FEDE-4F6E-A621-7493BA4913BB</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>2F2D7587-FEDE-4F6E-A621-7493BA4913BB.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>8</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>CloudDriveProject project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>CloudDriveFileProviderExtension</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project CloudDriveProject with scheme CloudDriveFileProviderExtension and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>815745281.56415606</real>
+			<key>timeStoppedRecording</key>
+			<real>815745284.143103</real>
+			<key>title</key>
+			<string>Building project CloudDriveProject with scheme CloudDriveFileProviderExtension and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>2F2D7587-FEDE-4F6E-A621-7493BA4913BB</string>
+		</dict>
+		<key>4AF657E3-8696-4D95-8D97-84174DB507E9</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>4AF657E3-8696-4D95-8D97-84174DB507E9.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>8</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>CloudDriveProject project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>CloudDriveProject</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project CloudDriveProject with scheme CloudDriveProject and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>815745699.48117697</real>
+			<key>timeStoppedRecording</key>
+			<real>815745702.20618796</real>
+			<key>title</key>
+			<string>Building project CloudDriveProject with scheme CloudDriveProject and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>4AF657E3-8696-4D95-8D97-84174DB507E9</string>
+		</dict>
+		<key>6D060C7F-DD41-4BF4-B529-2AE96ED9383E</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6D060C7F-DD41-4BF4-B529-2AE96ED9383E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>8</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>CloudDriveProject project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>CloudDriveProject</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project CloudDriveProject with scheme CloudDriveProject and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>815745270.21626604</real>
+			<key>timeStoppedRecording</key>
+			<real>815745274.26567996</real>
+			<key>title</key>
+			<string>Building project CloudDriveProject with scheme CloudDriveProject and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>6D060C7F-DD41-4BF4-B529-2AE96ED9383E</string>
+		</dict>
+		<key>B52CFEE8-F2FE-4423-B851-0A98EEF5413D</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B52CFEE8-F2FE-4423-B851-0A98EEF5413D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>8</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>CloudDriveProject project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>CloudDriveProject</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project CloudDriveProject with scheme CloudDriveProject and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>815745674.28071904</real>
+			<key>timeStoppedRecording</key>
+			<real>815745678.35391295</real>
+			<key>title</key>
+			<string>Building project CloudDriveProject with scheme CloudDriveProject and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>B52CFEE8-F2FE-4423-B851-0A98EEF5413D</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,14 @@
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/CacheManager.swift
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/ConflictManager.swift
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/EncryptionService.swift
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/FileProviderEnumerator.swift
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/FileProviderExtension.swift
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/FileProviderItem.swift
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/IntegrityVerifier.swift
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/KeychainManager.swift
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/KeychainService.swift
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/KeyManager.swift
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/OfflineQueue.swift
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/ShareManager.swift
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/SyncEngine.swift
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/SyncStateManager.swift

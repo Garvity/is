@@ -1,0 +1,755 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CloudDriveProject.xcodeproj -scheme CloudDriveProject -configuration Debug -destination platform=macOS -derivedDataPath /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild CODE_SIGNING_ALLOWED=NO build
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+2026-11-07 16:10:46.084 xcodebuild[5077:7740463] [MT] IDERunDestination: Supported platforms for the buildables in the current scheme is empty.
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (2 targets)
+    Target 'CloudDriveProject' in project 'CloudDriveProject'
+        ➜ Explicit dependency on target 'CloudDriveFileProviderExtension' in project 'CloudDriveProject'
+    Target 'CloudDriveFileProviderExtension' in project 'CloudDriveProject' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 6ed8f554b2753e9d8c2dc915a4bde20f
+Build description path: /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/XCBuildData/6ed8f554b2753e9d8c2dc915a4bde20f.xcbuilddata
+CreateBuildDirectory /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules
+    cd /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject.xcodeproj
+    builtin-create-build-directory /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/ModuleCache.noindex
+    cd /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject.xcodeproj
+    builtin-create-build-directory /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/ModuleCache.noindex
+
+CreateBuildDirectory /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/CompilationCache.noindex
+    cd /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject.xcodeproj
+    builtin-create-build-directory /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/CompilationCache.noindex
+
+CreateBuildDirectory /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products
+    cd /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject.xcodeproj
+    builtin-create-build-directory /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products
+
+CreateBuildDirectory /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex
+    cd /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject.xcodeproj
+    builtin-create-build-directory /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex
+
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKStatCaches.noindex/macosx27.2-26B118-a7ff82d74745d5ef33555b35c4238456.sdkstatcache
+    cd /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -o /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKStatCaches.noindex/macosx27.2-26B118-a7ff82d74745d5ef33555b35c4238456.sdkstatcache
+
+CreateBuildDirectory /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+    cd /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject.xcodeproj
+    builtin-create-build-directory /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug
+    cd /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject.xcodeproj
+    builtin-create-build-directory /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug
+
+CreateBuildDirectory /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/PrecompiledHeaders
+    cd /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject.xcodeproj
+    builtin-create-build-directory /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/PrecompiledHeaders
+
+CreateBuildDirectory /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/ExplicitPrecompiledModules
+    cd /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject.xcodeproj
+    builtin-create-build-directory /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/EagerLinkingTBDs/Debug
+    cd /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject.xcodeproj
+    builtin-create-build-directory /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/EagerLinkingTBDs/Debug
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject-24f022b407f6ef4b7e622afcbd3af225-VFS/all-product-headers.yaml
+    cd /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject.xcodeproj
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject-24f022b407f6ef4b7e622afcbd3af225-VFS/all-product-headers.yaml
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject_const_extract_protocols.json (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.SwiftConstValuesFileList (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.SwiftFileList (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.SwiftFileList
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.LinkFileList (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.LinkFileList
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-OutputFileMap.json (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject.hmap (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject.hmap
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject.DependencyStaticMetadataFileList (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject.DependencyMetadataFileList (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-project-headers.hmap (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-project-headers.hmap
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-own-target-headers.hmap (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-generated-files.hmap (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-generated-files.hmap
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-all-target-headers.hmap (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-all-non-framework-target-headers.hmap (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-DebugDylibPath-normal-arm64.txt (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-DebugDylibPath-normal-arm64.txt
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-DebugDylibInstallName-normal-arm64.txt (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-DebugDylibInstallName-normal-arm64.txt
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension_const_extract_protocols.json (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension.SwiftFileList (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension.SwiftFileList
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension.SwiftConstValuesFileList (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension.LinkFileList (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension.LinkFileList
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension-OutputFileMap.json (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension.hmap (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension.hmap
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension.DependencyStaticMetadataFileList (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension.DependencyMetadataFileList (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-project-headers.hmap (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-project-headers.hmap
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-own-target-headers.hmap (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-generated-files.hmap (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-generated-files.hmap
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-all-target-headers.hmap (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-all-non-framework-target-headers.hmap (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-DebugEntryPoint-normal-arm64.txt (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-DebugEntryPoint-normal-arm64.txt
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-DebugDylibPath-normal-arm64.txt (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-DebugDylibPath-normal-arm64.txt
+
+WriteAuxiliaryFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-DebugDylibInstallName-normal-arm64.txt (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    write-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-DebugDylibInstallName-normal-arm64.txt
+
+MkDir /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/Resources (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    /bin/mkdir -p /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/Resources
+
+MkDir /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/PlugIns (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    /bin/mkdir -p /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/PlugIns
+
+MkDir /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/MacOS (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    /bin/mkdir -p /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/MacOS
+
+MkDir /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    /bin/mkdir -p /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents
+
+MkDir /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    /bin/mkdir -p /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app
+
+MkDir /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.appex/Contents (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    /bin/mkdir -p /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.appex/Contents
+
+MkDir /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.appex (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    /bin/mkdir -p /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.appex
+
+MkDir /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.appex/Contents/MacOS (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    /bin/mkdir -p /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.appex/Contents/MacOS
+
+Ld /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.appex/Contents/MacOS/__preview.dylib normal (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos27.0 -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug -F/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug -install_name @rpath/CloudDriveFileProviderExtension.debug.dylib -rdynamic -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension_dependency_info.dat -o /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.appex/Contents/MacOS/__preview.dylib
+
+ProcessInfoPlistFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.appex/Contents/Info.plist /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/Info.plist (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-infoPlistUtility /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/Info.plist -producttype com.apple.product-type.app-extension -expandbuildsettings -platform macosx -o /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.appex/Contents/Info.plist
+
+SwiftDriver CloudDriveFileProviderExtension normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CloudDriveFileProviderExtension -Onone @/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos27.0 -g -module-cache-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/ModuleCache.noindex -Xfrontend -serialize-debugging-options -application-extension -enable-testing -index-store-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug -F /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug -emit-localized-strings -emit-localized-strings-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64 -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKStatCaches.noindex/macosx27.2-26B118-a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/ModuleCache.noindex -sdk-module-cache-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension_const_extract_protocols.json -Xcc -iquote -Xcc /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-generated-files.hmap -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-own-target-headers.hmap -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-all-target-headers.hmap -Xcc -iquote -Xcc /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-project-headers.hmap -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/include -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/DerivedSources-normal/arm64 -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/DerivedSources/arm64 -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension-Swift.h -working-directory /Users/garv/Projects/helumi/CloudDriveProject -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/_Builtin_float-11QYNJQ4F1XY19I4Q6T0SQCFS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/_AvailabilityInternal-84FKIZBIOUL5GVEATR7K6QNMX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/_Builtin_stddef-52EJZ6EQ7LEKEK6S9R0KCTU3N.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/_SwiftConcurrencyShims-8TCBACHFHW9BB5DH24JSI6QOE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/SwiftShims-2P2Y4NZWJXG5VS5YVQAEUKSNI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/ptrauth-2NX51BYDU5EYOSZICUIBC7Z4B.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/_Builtin_stdarg-6R8KAPNQKZIPEA6IOZKWI8MRA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/ptrcheck-C8SZWEAEM91Z0UQ11AK3QJTQJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/_Builtin_stdbool-AIOQPWW87ILYTLVMDOWAR6Q0R.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/_DarwinFoundation1-5GX60WBU2BONMCIQG09MBRWPP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/_DarwinFoundation2-3KDRFYLU94JUR5WDUZP34QIVN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/_Builtin_limits-F2REJBP46OAFJLBADYL6LM44X.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/_Builtin_stdint-5D49DN373X83E2M0BFCE9VDRX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/string_h-591I6EUD0GHYF8OABZJ5W7ITP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/sys_types-D90Q2BXG4PCF43ZWJPJCS246S.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/_DarwinFoundation3-CSZF8I6G0N8ACVXLPFDHR8QEA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/libDER-3IZTB7YZ4PAWGJB9OOCRUVGZE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/_Builtin_inttypes-QVANX9P1R4ZY1S5ECTTEALMQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/Darwin-CC13VF56SYIF93E7OXZ7WBDAZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/MachO-5AUZFS01DUYLRP1WAM3GLV0YM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/libkern-PN94IUZ0NORTPMLI83BH6FBI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/launch-BGKLPV3VN146GUA94N2HH9M5L.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/ObjectiveC-1CGE9W7F7PIWZZUL1EBU1JV5C.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/os_object-WFSPLSAZ08LR706L0F3MB1DD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/os_workgroup-AMQWMOIN0D2FDFEWREZTJV478.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/Dispatch-2XAJEI6SQVIES0CRLHY04NYWQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/XPC-7QLFPPIQFSNSZCTLH1K7U9DPT.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/CoreFoundation-61EN2A7CBKULK3GOQG8LAT87T.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/IOKit-D01N93T8Y65K4GU3RDKAAPL1K.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/Security-9L2WMT7XTC2DHQUDRG49X85J1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/CFNetwork-1Q9OD5PISJ7I0YZ8LXN5CXYU5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/CoreGraphics-49YWGD3YPHMJRA1GIRZQJN1O9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/DiskArbitration-9ET47E8B261WV3DSBLHPJCOBL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/CoreServices-E4WA7BU8L7LYJZ5T6KJAF7K9P.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/Foundation-ADB7DKHFFY4KY3DXOCL0SNKUX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/FileProvider-EYH0G6ODBZSC9MSHV8HONDPPD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/UniformTypeIdentifiers-62YH2NIZBMAG8NCW0PM5NZIHX.pcm
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ CloudDriveFileProviderExtension (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+
+SwiftCompile normal arm64 (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    
+
+SwiftCompile normal arm64 Compiling\ FileProviderExtension.swift /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/FileProviderExtension.swift (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+
+SwiftCompile normal arm64 /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/FileProviderExtension.swift (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-SwiftPerFileCompile FileProviderExtension.swift
+
+SwiftCompile normal arm64 Compiling\ FileProviderEnumerator.swift /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/FileProviderEnumerator.swift (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+
+SwiftCompile normal arm64 /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/FileProviderEnumerator.swift (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-SwiftPerFileCompile FileProviderEnumerator.swift
+
+SwiftCompile normal arm64 Compiling\ FileProviderItem.swift /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/FileProviderItem.swift (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+
+SwiftCompile normal arm64 /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/FileProviderItem.swift (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-SwiftPerFileCompile FileProviderItem.swift
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for CloudDriveFileProviderExtension (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+
+SwiftDriver\ Compilation\ Requirements CloudDriveFileProviderExtension normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CloudDriveFileProviderExtension -Onone @/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos27.0 -g -module-cache-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/ModuleCache.noindex -Xfrontend -serialize-debugging-options -application-extension -enable-testing -index-store-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug -F /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug -emit-localized-strings -emit-localized-strings-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64 -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKStatCaches.noindex/macosx27.2-26B118-a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/ModuleCache.noindex -sdk-module-cache-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension_const_extract_protocols.json -Xcc -iquote -Xcc /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-generated-files.hmap -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-own-target-headers.hmap -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-all-target-headers.hmap -Xcc -iquote -Xcc /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-project-headers.hmap -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/include -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/DerivedSources-normal/arm64 -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/DerivedSources/arm64 -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension-Swift.h -working-directory /Users/garv/Projects/helumi/CloudDriveProject -experimental-emit-module-separately -disable-cmo
+
+Copy /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.swiftmodule/arm64-apple-macos.abi.json /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension.abi.json (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension.abi.json /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.swiftmodule/arm64-apple-macos.abi.json
+
+SwiftMergeGeneratedHeaders /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/DerivedSources/CloudDriveFileProviderExtension-Swift.h /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension-Swift.h (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-swiftHeaderTool -arch arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension-Swift.h -o /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/DerivedSources/CloudDriveFileProviderExtension-Swift.h
+
+Copy /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.swiftmodule/arm64-apple-macos.swiftdoc /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension.swiftdoc (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension.swiftdoc /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.swiftmodule/arm64-apple-macos.swiftdoc
+
+Copy /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.swiftmodule/arm64-apple-macos.swiftmodule /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension.swiftmodule (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension.swiftmodule /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.swiftmodule/arm64-apple-macos.swiftmodule
+
+Copy /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension.swiftsourceinfo (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension.swiftsourceinfo /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo
+
+MkDir /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/assetcatalog_output/unthinned (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    /bin/mkdir -p /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/assetcatalog_output/unthinned
+
+MkDir /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/assetcatalog_output/thinned (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    /bin/mkdir -p /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/assetcatalog_output/thinned
+
+GenerateAssetSymbols /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/Assets.xcassets (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/Assets.xcassets --compile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/Resources --output-format human-readable-text --notices --warnings --export-dependency-info /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/assetcatalog_dependencies --output-partial-info-plist /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/assetcatalog_generated_info.plist --app-icon AppIcon --accent-color AccentColor --enable-on-demand-resources NO --development-region en --target-device mac --minimum-deployment-target 27.0 --platform macosx --bundle-identifier com.garv.CloudDriveProject --generate-swift-asset-symbols /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/DerivedSources/GeneratedAssetSymbols.swift --generate-objc-asset-symbols /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/DerivedSources/GeneratedAssetSymbols.h --generate-asset-symbol-index /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/* com.apple.actool.compilation-results */
+/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/DerivedSources/GeneratedAssetSymbols.h
+/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/DerivedSources/GeneratedAssetSymbols.swift
+
+
+CompileAssetCatalogVariant thinned /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/Resources /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/Assets.xcassets (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/Assets.xcassets --compile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/assetcatalog_output/thinned --output-format human-readable-text --notices --warnings --export-dependency-info /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/assetcatalog_dependencies_thinned --output-partial-info-plist /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/assetcatalog_generated_info.plist_thinned --app-icon AppIcon --accent-color AccentColor --enable-on-demand-resources NO --development-region en --target-device mac --minimum-deployment-target 27.0 --platform macosx
+/* com.apple.actool.compilation-results */
+/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/assetcatalog_generated_info.plist_thinned
+
+
+SwiftDriver CloudDriveProject normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CloudDriveProject -Onone @/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos27.0 -g -module-cache-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug -F /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug -emit-localized-strings -emit-localized-strings-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64 -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKStatCaches.noindex/macosx27.2-26B118-a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/ModuleCache.noindex -sdk-module-cache-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject_const_extract_protocols.json -Xcc -iquote -Xcc /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-generated-files.hmap -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-own-target-headers.hmap -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-all-target-headers.hmap -Xcc -iquote -Xcc /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-project-headers.hmap -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/include -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/DerivedSources-normal/arm64 -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/DerivedSources/arm64 -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-Swift.h -working-directory /Users/garv/Projects/helumi/CloudDriveProject -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/ptrcheck-2AAUL2FN1RPR850SUHRXUSOR6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/_Builtin_stddef-2RY2VWFMJI3509W827GG9ZWYL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/_Builtin_float-BJJV41BMWOCGD44GEWAD3CRC2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/_AvailabilityInternal-F18AXD322DKNT9IGH92J597DF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/DeveloperToolsSupport-53L42QUAYV74GIFAKESZPELIZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/_SwiftConcurrencyShims-ASPGK7TWCSDNHS7NQ95QJTOG1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/_Builtin_stdarg-D0KO2YB6NUMUWNXGT8FNRRKU8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/ptrauth-4TGPYDN5RLXS6ZTGPKMVGVLD8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/_Builtin_stdbool-5NAB77B2USM2B76MJC1IWUALS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/_DarwinFoundation1-A03LSNULE7TJ3E7XUMU3QBCNF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/SwiftShims-3FLUOKOS3WOWRIN86J53BZE2C.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/_Builtin_limits-1KY1U23XWFH4TVOT4ALXGJ5Y4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/_DarwinFoundation2-9YTZC3MBS5P6VLM71FST3UZ8P.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/SQLite3-4G8B7IRXKIZ2EVBA8JLPQGVSP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/string_h-57MVE3ZIITH5Y2KT8T9OPAI2F.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/sys_types-1KJI9AX2YBJZ57P7A9ASZETWT.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/_Builtin_tgmath-559FZMM0I71WI32MAMWTLQ9CP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/_Builtin_stdint-AK8FREKT1UT2WQIVRKDEDJ9P6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/_Builtin_stdatomic-2FRO2087QZEZVT230PISGJHAC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/_Builtin_intrinsics-D96KWP8061JSKZ2V4ZR31DD79.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/libDER-8GNJ6CDDB4R969NH95IHP4TOJ.pcm
+
+SwiftDriverJobDiscovery normal arm64 Compiling FileProviderEnumerator.swift (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/_DarwinFoundation3-F0TDTE3H066U2KQC9JJUZ2FYV.pcm
+
+SwiftDriverJobDiscovery normal arm64 Compiling FileProviderExtension.swift (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/_Builtin_inttypes-AWJXQ8QPQYN5HFG7UWLFUEN5O.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/simd-8IEQH1LLOW9LE88X1LLMP2AR0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/Darwin-A8C8DJJ2VI8260JBO8WNZXVSY.pcm
+
+SwiftDriverJobDiscovery normal arm64 Compiling FileProviderItem.swift (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+
+SwiftDriver\ Compilation CloudDriveFileProviderExtension normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CloudDriveFileProviderExtension -Onone @/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos27.0 -g -module-cache-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/ModuleCache.noindex -Xfrontend -serialize-debugging-options -application-extension -enable-testing -index-store-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug -F /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug -emit-localized-strings -emit-localized-strings-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64 -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKStatCaches.noindex/macosx27.2-26B118-a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/ModuleCache.noindex -sdk-module-cache-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension_const_extract_protocols.json -Xcc -iquote -Xcc /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-generated-files.hmap -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-own-target-headers.hmap -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-all-target-headers.hmap -Xcc -iquote -Xcc /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-project-headers.hmap -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/include -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/DerivedSources-normal/arm64 -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/DerivedSources/arm64 -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension-Swift.h -working-directory /Users/garv/Projects/helumi/CloudDriveProject -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.appex/Contents/MacOS/CloudDriveFileProviderExtension.debug.dylib normal (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos27.0 -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/EagerLinkingTBDs/Debug -L/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug -F/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/EagerLinkingTBDs/Debug -F/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug -filelist /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension.LinkFileList -install_name @rpath/CloudDriveFileProviderExtension.debug.dylib -Xlinker -rpath -Xlinker @executable_path/../Frameworks -Xlinker -rpath -Xlinker @executable_path/../../../../Frameworks -Xlinker -object_path_lto -Xlinker /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension_dependency_info.dat -fapplication-extension -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension.swiftmodule -Xlinker -alias -Xlinker _NSExtensionMain -Xlinker ___debug_main_executable_dylib_entry_point -framework UniformTypeIdentifiers -o /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.appex/Contents/MacOS/CloudDriveFileProviderExtension.debug.dylib
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/libkern-CTLA14PNSQ2R9BY11ZMA6DW57.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/launch-ZOA07NYMUK9UX2WDGOZVCASG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/CUPS-3IW7Q2LEDOU2CAEGCZ3LJ6ME4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/MachO-84Y6UWSX2T2A9YY23CFSIKTG5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/Spatial-AUDIYESSAFGMQ7Z4DZSSY009O.pcm
+
+ConstructStubExecutorLinkFileList /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-ExecutorLinkFileList-normal-arm64.txt (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    construct-stub-executor-link-file-list /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.appex/Contents/MacOS/CloudDriveFileProviderExtension.debug.dylib /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-ExecutorLinkFileList-normal-arm64.txt
+note: Using stub executor library without Swift entry point. (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+
+Ld /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.appex/Contents/MacOS/CloudDriveFileProviderExtension normal (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos27.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug -F/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug -Xlinker -rpath -Xlinker @executable_path -Xlinker -rpath -Xlinker @executable_path/../Frameworks -Xlinker -rpath -Xlinker @executable_path/../../../../Frameworks -rdynamic -Xlinker -no_deduplicate -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-DebugDylibPath-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_entry -Xlinker /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-DebugEntryPoint-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-DebugDylibInstallName-normal-arm64.txt -Xlinker -filelist -Xlinker /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension-ExecutorLinkFileList-normal-arm64.txt /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.appex/Contents/MacOS/CloudDriveFileProviderExtension.debug.dylib -o /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.appex/Contents/MacOS/CloudDriveFileProviderExtension
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/ObjectiveC-BN1Y2L3D6R7BCM5WW66CCV9VV.pcm
+
+ExtractAppIntentsMetadata (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name CloudDriveFileProviderExtension --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk --xcode-version 27B52 --platform-family macOS --deployment-target 27.0 --bundle-identifier com.garv.CloudDriveProject.CloudDriveFileProviderExtension --output /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.appex/Contents/Resources --target-triple arm64-apple-macos27.0 --binary-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.appex/Contents/MacOS/CloudDriveFileProviderExtension --dependency-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension_dependency_info.dat --stringsdata-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension.SwiftFileList --metadata-file-list /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension.DependencyMetadataFileList --static-metadata-file-list /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/CloudDriveFileProviderExtension.DependencyStaticMetadataFileList --swift-const-vals-list /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-11-07 16:10:56.864 appintentsmetadataprocessor[5907:7742003] Starting App Intents metadata extraction
+2026-11-07 16:10:56.879 appintentsmetadataprocessor[5907:7742003] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/os_object-62B11KQ471RVQD1HXS68D4D3O.pcm
+
+RegisterExecutionPolicyException /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.appex (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-RegisterExecutionPolicyException /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.appex
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/os_workgroup-4YRH3IRUWCGSU70H9J7O4CC67.pcm
+
+Touch /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.appex (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    /usr/bin/touch -c /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.appex
+
+Ld /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/MacOS/__preview.dylib normal (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos27.0 -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug -F/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug -install_name @rpath/CloudDriveProject.debug.dylib -rdynamic -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject_dependency_info.dat -o /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/MacOS/__preview.dylib
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/Dispatch-ALIX54QFE5WNPZHHC5DHINSKU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/CoreFoundation-AUVYOSLVYCOCSBEEROSJV85E0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/XPC-B5T6P9F8CY7QNF6DUNPC5BK68.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/os-4UGPIXMRORZKYQEH7G7QOG6BH.pcm
+
+LinkAssetCatalog /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/Assets.xcassets (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-linkAssetCatalog --thinned /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/assetcatalog_output/thinned --thinned-dependencies /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/assetcatalog_dependencies_thinned --thinned-info-plist-content /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/assetcatalog_generated_info.plist_thinned --unthinned /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/assetcatalog_output/unthinned --unthinned-dependencies /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/assetcatalog_dependencies_unthinned --unthinned-info-plist-content /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/assetcatalog_generated_info.plist_unthinned --output /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/Resources --plist-output /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/assetcatalog_generated_info.plist
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/CoreAudioTypes-CRAG8KN28CUJTO9C0F01I7DJ4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/Security-BAN477ZY38C0B92RWO6VFADNA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/ColorSync-9NISYRJNCWNEN9OK754KZMX1M.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/IOKit-94CE94BLN6MN8TUBGH9COFJNZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/CFNetwork-ADAKWF1TK7JGKZQBEFS9HNT2L.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/DiskArbitration-670W3ZCCP0Y0WF6YAPZ3KA15T.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/CoreGraphics-AF7FNAX7427T0Q7C70OTXY3VY.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/CoreServices-2VF9E1GN0Y271XLUHKNDKZ5GO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/ImageIO-2BOO7Z85S4P1GQTPQ08H561D9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/CoreText-8MJW03FDIVBZ6RVVSBU8S6C3N.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/Foundation-16ID7H64ZEPB77NKHMIWWFRIQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/ApplicationServices-D2TQGIEY22IGY1342GHQ7TKIZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/Accessibility-D2OJ9ZHAMVM2F18O4KWI8OZ86.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/CoreTransferable-5LIEMMMJQ5D5IJF0A50XEUDKH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/DataDetection-BUIG6LO3EXO39Q523STQR5NZK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/IOSurface-CL68QRFV3AIWQ91SO71FRF5VI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/CoreAudio-ECZ6IAGZEWX6XLHHDY9QZHJFF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/CoreData-COM9T8T0YBIYC8SZDSPWVG1VZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/UniformTypeIdentifiers-A6A9KT9KCJPQA40YB2FC2FFB1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/Symbols-99CXPSCO0Z9ZICNQB04REGALE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/OSLog-8QGZYFN6MJ8HUYBP8L548L0FD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/Metal-9UY2E2MIA37FIPJQJSVB49UTY.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/OpenGL-BPHOSQRV8AEZ2DV2N0PFEQ90Y.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/CoreVideo-7NF8SRJP8R4H9P6E1QQ1WHQ6I.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/CoreMedia-CYDHL6OSBRXJUVEDAX5F2QSTZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/CoreImage-4KTDK77BV1RVV4J6K43QT1N5K.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/QuartzCore-4Y2GCSR3R61JC9UDAWZO9OQCT.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/SwiftUICore-CYSK03SBP1N0XM4QUECC0UFIH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/AppKit-7U1AMVA8BKXMFUTNVB1UUSYRD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules/SwiftUI-6M27J67DPY9S2FWGGHIZHZEHZ.pcm
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ CloudDriveProject (in target 'CloudDriveProject' from project 'CloudDriveProject')
+
+SwiftCompile normal arm64 (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    
+
+SwiftCompile normal arm64 Compiling\ CloudDriveProjectApp.swift /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/CloudDriveProjectApp.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+
+SwiftCompile normal arm64 /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/CloudDriveProjectApp.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-SwiftPerFileCompile CloudDriveProjectApp.swift
+
+SwiftCompile normal arm64 Compiling\ APIClient.swift /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/APIClient.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+
+SwiftCompile normal arm64 /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/APIClient.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-SwiftPerFileCompile APIClient.swift
+
+SwiftCompile normal arm64 Compiling\ Database.swift /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/Database.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+
+SwiftCompile normal arm64 /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/Database.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-SwiftPerFileCompile Database.swift
+
+SwiftCompile normal arm64 Compiling\ ContentView.swift /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/ContentView.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+
+SwiftCompile normal arm64 /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/ContentView.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-SwiftPerFileCompile ContentView.swift
+
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/ContentView.swift:192:9: warning: no 'async' operations occur within 'await' expression [#UnnecessaryEffectMarker]
+190 |     func login(email: String, password: String) async throws {
+191 |         _ = try await apiClient.login(email: email, password: password)
+192 |         await restoreSession()
+    |         `- warning: no 'async' operations occur within 'await' expression [#UnnecessaryEffectMarker]
+193 |     }
+194 |     
+
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/ContentView.swift:197:9: warning: no 'async' operations occur within 'await' expression [#UnnecessaryEffectMarker]
+195 |     func register(email: String, password: String) async throws {
+196 |         _ = try await apiClient.register(email: email, password: password)
+197 |         await restoreSession()
+    |         `- warning: no 'async' operations occur within 'await' expression [#UnnecessaryEffectMarker]
+198 |     }
+199 |     
+
+[#UnnecessaryEffectMarker]: <https://docs.swift.org/compiler/documentation/diagnostics/unnecessary-effect-marker>
+SwiftCompile normal arm64 Compiling\ KeychainService.swift /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/KeychainService.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+
+SwiftCompile normal arm64 /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/KeychainService.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-SwiftPerFileCompile KeychainService.swift
+
+SwiftCompile normal arm64 Compiling\ GeneratedAssetSymbols.swift /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+
+SwiftCompile normal arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-SwiftPerFileCompile GeneratedAssetSymbols.swift
+
+SwiftCompile normal arm64 Compiling\ APIModels.swift /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/APIModels.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+
+SwiftCompile normal arm64 /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/APIModels.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-SwiftPerFileCompile APIModels.swift
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for CloudDriveProject (in target 'CloudDriveProject' from project 'CloudDriveProject')
+
+SwiftDriver\ Compilation\ Requirements CloudDriveProject normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CloudDriveProject -Onone @/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos27.0 -g -module-cache-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug -F /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug -emit-localized-strings -emit-localized-strings-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64 -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKStatCaches.noindex/macosx27.2-26B118-a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/ModuleCache.noindex -sdk-module-cache-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject_const_extract_protocols.json -Xcc -iquote -Xcc /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-generated-files.hmap -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-own-target-headers.hmap -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-all-target-headers.hmap -Xcc -iquote -Xcc /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-project-headers.hmap -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/include -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/DerivedSources-normal/arm64 -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/DerivedSources/arm64 -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-Swift.h -working-directory /Users/garv/Projects/helumi/CloudDriveProject -experimental-emit-module-separately -disable-cmo
+
+SwiftMergeGeneratedHeaders /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/DerivedSources/CloudDriveProject-Swift.h /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-Swift.h (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-swiftHeaderTool -arch arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-Swift.h -o /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/DerivedSources/CloudDriveProject-Swift.h
+
+Copy /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.swiftmodule/arm64-apple-macos.swiftmodule /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.swiftmodule (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.swiftmodule /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.swiftmodule/arm64-apple-macos.swiftmodule
+
+Copy /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.swiftmodule/arm64-apple-macos.swiftdoc /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.swiftdoc (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.swiftdoc /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.swiftmodule/arm64-apple-macos.swiftdoc
+
+Copy /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.swiftmodule/arm64-apple-macos.abi.json /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.abi.json (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.abi.json /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.swiftmodule/arm64-apple-macos.abi.json
+
+Copy /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.swiftsourceinfo (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.swiftsourceinfo /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo
+
+SwiftDriverJobDiscovery normal arm64 Compiling APIModels.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+
+SwiftDriverJobDiscovery normal arm64 Compiling APIClient.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+
+SwiftDriverJobDiscovery normal arm64 Compiling Database.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+
+SwiftDriverJobDiscovery normal arm64 Compiling KeychainService.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+
+SwiftDriverJobDiscovery normal arm64 Compiling CloudDriveProjectApp.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+
+SwiftDriverJobDiscovery normal arm64 Compiling ContentView.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+
+SwiftDriverJobDiscovery normal arm64 Compiling GeneratedAssetSymbols.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+
+SwiftDriver\ Compilation CloudDriveProject normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CloudDriveProject -Onone @/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos27.0 -g -module-cache-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug -F /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug -emit-localized-strings -emit-localized-strings-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64 -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKStatCaches.noindex/macosx27.2-26B118-a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/ModuleCache.noindex -sdk-module-cache-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject_const_extract_protocols.json -Xcc -iquote -Xcc /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-generated-files.hmap -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-own-target-headers.hmap -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-all-target-headers.hmap -Xcc -iquote -Xcc /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-project-headers.hmap -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/include -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/DerivedSources-normal/arm64 -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/DerivedSources/arm64 -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-Swift.h -working-directory /Users/garv/Projects/helumi/CloudDriveProject -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/MacOS/CloudDriveProject.debug.dylib normal (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos27.0 -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/EagerLinkingTBDs/Debug -L/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug -F/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/EagerLinkingTBDs/Debug -F/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug -filelist /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.LinkFileList -install_name @rpath/CloudDriveProject.debug.dylib -Xlinker -rpath -Xlinker @executable_path/../Frameworks -Xlinker -object_path_lto -Xlinker /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.swiftmodule -Xlinker -alias -Xlinker _main -Xlinker ___debug_main_executable_dylib_entry_point -o /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/MacOS/CloudDriveProject.debug.dylib
+
+ConstructStubExecutorLinkFileList /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-ExecutorLinkFileList-normal-arm64.txt (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    construct-stub-executor-link-file-list /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/MacOS/CloudDriveProject.debug.dylib /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-ExecutorLinkFileList-normal-arm64.txt
+note: Using stub executor library with Swift entry point. (in target 'CloudDriveProject' from project 'CloudDriveProject')
+
+Ld /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/MacOS/CloudDriveProject normal (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos27.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug -F/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug -Xlinker -rpath -Xlinker @executable_path -Xlinker -rpath -Xlinker @executable_path/../Frameworks -rdynamic -Xlinker -no_deduplicate -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-DebugDylibPath-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-DebugDylibInstallName-normal-arm64.txt -Xlinker -filelist -Xlinker /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-ExecutorLinkFileList-normal-arm64.txt /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/MacOS/CloudDriveProject.debug.dylib -o /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/MacOS/CloudDriveProject
+
+Copy /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/PlugIns/CloudDriveFileProviderExtension.appex /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.appex (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks -remove-static-executable /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveFileProviderExtension.appex /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/PlugIns
+
+ProcessInfoPlistFile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/Info.plist /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/CloudDriveFileProviderExtension/Info.plist (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-infoPlistUtility /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/CloudDriveFileProviderExtension/Info.plist -producttype com.apple.product-type.application -genpkginfo /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/PkgInfo -expandbuildsettings -platform macosx -additionalcontentfile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/assetcatalog_generated_info.plist -scanforprivacyfile /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/PlugIns/CloudDriveFileProviderExtension.appex -o /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/Info.plist
+
+CopySwiftLibs /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/MacOS/CloudDriveProject.debug.dylib --scan-folder /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/Frameworks --scan-folder /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/PlugIns --scan-folder /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/Library/SystemExtensions --scan-folder /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/Extensions --platform macosx --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name CloudDriveProject --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk --xcode-version 27B52 --platform-family macOS --deployment-target 27.0 --bundle-identifier com.garv.CloudDriveProject --output /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/Resources --target-triple arm64-apple-macos27.0 --binary-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/MacOS/CloudDriveProject --dependency-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject_dependency_info.dat --stringsdata-file /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.SwiftFileList --metadata-file-list /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject.DependencyMetadataFileList --static-metadata-file-list /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject.DependencyStaticMetadataFileList --swift-const-vals-list /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-11-07 16:11:03.075 appintentsmetadataprocessor[6402:7742855] Starting App Intents metadata extraction
+2026-11-07 16:11:03.090 appintentsmetadataprocessor[6402:7742855] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+ValidateEmbeddedBinary /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/PlugIns/CloudDriveFileProviderExtension.appex (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    /Applications/Xcode.app/Contents/Developer/usr/bin/embeddedBinaryValidationUtility /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/PlugIns/CloudDriveFileProviderExtension.appex -info-plist-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app/Contents/Info.plist
+warning: The CFBundleVersion of an app extension ('1') must match that of its containing parent app (null).
+
+RegisterExecutionPolicyException /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-RegisterExecutionPolicyException /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app
+
+Validate /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-validationUtility /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app -no-validate-extension -infoplist-subpath Contents/Info.plist
+
+Touch /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    /usr/bin/touch -c /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app
+
+RegisterWithLaunchServices /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-lsregisterurl --record-path /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/XCBuildData/registered-launchservices.txt -- /System/Library/Frameworks/CoreServices.framework/Versions/Current/Frameworks/LaunchServices.framework/Versions/Current/Support/lsregister -f -R -trusted /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products/Debug/CloudDriveProject.app
+
+PruneExplicitPrecompiledModules /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/SDKExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+** BUILD SUCCEEDED **
+

@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'CloudDriveProject' in project 'CloudDriveProject'
+➜ Explicit dependency on target 'CloudDriveFileProviderExtension' in project 'CloudDriveProject'
+Target 'CloudDriveFileProviderExtension' in project 'CloudDriveProject' (no dependencies)

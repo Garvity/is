@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>com.apple.application-identifier</key>
+	<string>RYDF99JX85.com.garv.CloudDriveProject.CloudDriveFileProviderExtension</string>
+	<key>com.apple.developer.team-identifier</key>
+	<string>RYDF99JX85</string>
+	<key>com.apple.security.app-sandbox</key>
+	<true/>
+	<key>com.apple.security.application-groups</key>
+	<array>
+		<string>group.com.garv.CloudDriveProject</string>
+	</array>
+	<key>com.apple.security.files.user-selected.read-only</key>
+	<true/>
+	<key>com.apple.security.get-task-allow</key>
+	<true/>
+	<key>com.apple.security.network.client</key>
+	<true/>
+	<key>keychain-access-groups</key>
+	<array>
+		<string>RYDF99JX85.com.garv.CloudDriveProject.shared</string>
+	</array>
+</dict>
+</plist>

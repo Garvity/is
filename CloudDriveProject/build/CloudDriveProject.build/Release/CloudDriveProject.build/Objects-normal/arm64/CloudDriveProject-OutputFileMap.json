@@ -1,0 +1,56 @@
+{
+  "" : {
+    "const-values" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-primary.swiftconstvalues",
+    "dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-primary.d",
+    "diagnostics" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-primary.dia",
+    "emit-module-dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-primary-emit-module.dia",
+    "pch" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-primary.swiftdeps"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/APIClient.swift" : {
+    "index-unit-output-path" : "/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/APIClient.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/APIClient.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/APIClient.o"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/APIModels.swift" : {
+    "index-unit-output-path" : "/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/APIModels.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/APIModels.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/APIModels.o"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/CloudDriveProjectApp.swift" : {
+    "index-unit-output-path" : "/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProjectApp.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProjectApp.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProjectApp.o"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/ContentView.swift" : {
+    "index-unit-output-path" : "/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/ContentView.o"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/Database.swift" : {
+    "index-unit-output-path" : "/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/Database.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/Database.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/Database.o"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/KeyManager.swift" : {
+    "index-unit-output-path" : "/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/KeyManager.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/KeyManager.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/KeyManager.o"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/KeychainService.swift" : {
+    "index-unit-output-path" : "/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/KeychainService.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/KeychainService.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/KeychainService.o"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/RecoveryViews.swift" : {
+    "index-unit-output-path" : "/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/RecoveryViews.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/RecoveryViews.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/RecoveryViews.o"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveProject.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveProject.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  }
+}

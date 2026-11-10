@@ -1,0 +1,29 @@
+# Rust/Cargo
+backend/target/
+backend/.env
+
+# macOS/Xcode
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+
+# Xcode
+**/DerivedData/
+**/*.xcworkspace/xcuserdata/
+**/*.xcodeproj/xcuserdata/
+**/*.xcodeproj/project.xcworkspace/
+
+# Project Database
+cloud_drive.db

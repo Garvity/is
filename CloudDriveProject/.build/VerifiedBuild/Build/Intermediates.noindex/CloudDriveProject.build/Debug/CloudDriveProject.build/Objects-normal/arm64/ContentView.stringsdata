@@ -1,0 +1,128 @@
+{
+  "source": "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/ContentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Register",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 30
+        }
+      },
+      {
+        "comment": "",
+        "key": "Login",
+        "location": {
+          "startingColumn": 47,
+          "startingLine": 30
+        }
+      },
+      {
+        "comment": "",
+        "key": "Email",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 34
+        }
+      },
+      {
+        "comment": "",
+        "key": "Password",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 38
+        }
+      },
+      {
+        "comment": "",
+        "key": "Register",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 47
+        }
+      },
+      {
+        "comment": "",
+        "key": "Login",
+        "location": {
+          "startingColumn": 49,
+          "startingLine": 47
+        }
+      },
+      {
+        "comment": "",
+        "key": "Already have an account? Login",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 64
+        }
+      },
+      {
+        "comment": "",
+        "key": "Don't have an account? Register",
+        "location": {
+          "startingColumn": 71,
+          "startingLine": 64
+        }
+      },
+      {
+        "comment": "",
+        "key": "Logged in as: %@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 92
+        }
+      },
+      {
+        "comment": "",
+        "key": "No files or folders yet",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 100
+        }
+      },
+      {
+        "comment": "",
+        "key": "Refresh",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 116
+        }
+      },
+      {
+        "comment": "",
+        "key": "CloudDrive",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 81
+        }
+      },
+      {
+        "comment": "",
+        "key": "Logout",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 85
+        }
+      },
+      {
+        "comment": "",
+        "key": "Folder",
+        "location": {
+          "startingColumn": 49,
+          "startingLine": 108
+        }
+      },
+      {
+        "comment": "",
+        "key": "File",
+        "location": {
+          "startingColumn": 60,
+          "startingLine": 108
+        }
+      }
+    ]
+  },
+  "version": 1
+}

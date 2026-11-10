@@ -1,0 +1,81 @@
+{
+  "" : {
+    "const-values" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension-primary.swiftconstvalues",
+    "dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension-primary.d",
+    "diagnostics" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension-primary.dia",
+    "emit-module-dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension-primary-emit-module.dia",
+    "pch" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension-primary.swiftdeps"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/CacheManager.swift" : {
+    "index-unit-output-path" : "/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CacheManager.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CacheManager.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CacheManager.o"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/ConflictManager.swift" : {
+    "index-unit-output-path" : "/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/ConflictManager.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/ConflictManager.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/ConflictManager.o"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/EncryptionService.swift" : {
+    "index-unit-output-path" : "/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/EncryptionService.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/EncryptionService.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/EncryptionService.o"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/FileProviderEnumerator.swift" : {
+    "index-unit-output-path" : "/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderEnumerator.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderEnumerator.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderEnumerator.o"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/FileProviderExtension.swift" : {
+    "index-unit-output-path" : "/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderExtension.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderExtension.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderExtension.o"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/FileProviderItem.swift" : {
+    "index-unit-output-path" : "/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderItem.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderItem.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderItem.o"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/IntegrityVerifier.swift" : {
+    "index-unit-output-path" : "/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/IntegrityVerifier.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/IntegrityVerifier.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/IntegrityVerifier.o"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/KeyManager.swift" : {
+    "index-unit-output-path" : "/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/KeyManager.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/KeyManager.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/KeyManager.o"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/KeychainManager.swift" : {
+    "index-unit-output-path" : "/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/KeychainManager.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/KeychainManager.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/KeychainManager.o"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/KeychainService.swift" : {
+    "index-unit-output-path" : "/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/KeychainService.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/KeychainService.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/KeychainService.o"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/OfflineQueue.swift" : {
+    "index-unit-output-path" : "/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/OfflineQueue.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/OfflineQueue.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/OfflineQueue.o"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/ShareManager.swift" : {
+    "index-unit-output-path" : "/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/ShareManager.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/ShareManager.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/ShareManager.o"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/SyncEngine.swift" : {
+    "index-unit-output-path" : "/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/SyncEngine.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/SyncEngine.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/SyncEngine.o"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/SyncStateManager.swift" : {
+    "index-unit-output-path" : "/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/SyncStateManager.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/SyncStateManager.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/SyncStateManager.o"
+  }
+}

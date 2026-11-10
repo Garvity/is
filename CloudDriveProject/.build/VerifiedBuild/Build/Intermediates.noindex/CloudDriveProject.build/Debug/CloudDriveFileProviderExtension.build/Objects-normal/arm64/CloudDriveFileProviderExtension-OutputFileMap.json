@@ -1,0 +1,39 @@
+{
+  "" : {
+    "diagnostics" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension-primary.dia",
+    "emit-module-dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension-primary-emit-module.dia",
+    "pch" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension-primary.swiftdeps"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/FileProviderEnumerator.swift" : {
+    "const-values" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderEnumerator.swiftconstvalues",
+    "dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderEnumerator.d",
+    "diagnostics" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderEnumerator.dia",
+    "index-unit-output-path" : "/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderEnumerator.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderEnumerator.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderEnumerator.o",
+    "swift-dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderEnumerator.swiftdeps",
+    "swiftmodule" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderEnumerator~partial.swiftmodule"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/FileProviderExtension.swift" : {
+    "const-values" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderExtension.swiftconstvalues",
+    "dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderExtension.d",
+    "diagnostics" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderExtension.dia",
+    "index-unit-output-path" : "/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderExtension.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderExtension.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderExtension.o",
+    "swift-dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderExtension.swiftdeps",
+    "swiftmodule" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderExtension~partial.swiftmodule"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/FileProviderItem.swift" : {
+    "const-values" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderItem.swiftconstvalues",
+    "dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderItem.d",
+    "diagnostics" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderItem.dia",
+    "index-unit-output-path" : "/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderItem.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderItem.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderItem.o",
+    "swift-dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderItem.swiftdeps",
+    "swiftmodule" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveFileProviderExtension.build/Objects-normal/arm64/FileProviderItem~partial.swiftmodule"
+  }
+}

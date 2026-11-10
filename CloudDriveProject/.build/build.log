@@ -1,0 +1,353 @@
+2026-11-07 16:27:27.209 xcodebuild[11947:7762396]  DVTFilePathFSEvents: Failed to start fs event stream.
+2026-11-07 16:27:27.830 xcodebuild[11947:7762397] CoreSimulatorService connection became invalid.  Simulator services will no longer be available.
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CloudDriveProject.xcodeproj -scheme CloudDriveProject -configuration Debug -destination platform=macOS -derivedDataPath /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData CODE_SIGNING_ALLOWED=NO build
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+2026-11-07 16:27:27.937 xcodebuild[11947:7762336] [MT] DVTAssertions: Warning in DVTFrameworks/DVTFoundation/FileTypes/DVTFileDataTypeDetection.m:80
+Details:  detectedTypeIdentifier (com.apple.xml-property-list) does not conform to matchedTypeIdentifier in MagicFileDataTypeDetector extenson com.apple.property-list. When both are specified, this conformance is required unless overridden by setting allowNonInheritance. extension.identifier:Xcode.MagicFileDataTypeDetector.XMLPlist
+Object:   <DVTFileDataTypeDetectionMagicCache: 0x753075b660>
+Method:   -initWithExtension:
+Thread:   <_NSMainThread: 0x103645640>{number = 1, name = main}
+Please file a bug at https://feedbackassistant.apple.com with this warning message and any useful information you can provide.
+2026-11-07 16:27:27.944 xcodebuild[11947:7762336] [MT] DVTAssertions: Warning in DVTFrameworks/DVTFoundation/FileTypes/DVTFileDataTypeDetection.m:80
+Details:  detectedTypeIdentifier (com.apple.binary-property-list) does not conform to matchedTypeIdentifier in MagicFileDataTypeDetector extenson com.apple.property-list. When both are specified, this conformance is required unless overridden by setting allowNonInheritance. extension.identifier:Xcode.MagicFileDataTypeDetector.BinaryPlist
+Object:   <DVTFileDataTypeDetectionMagicCache: 0x75308599e0>
+Method:   -initWithExtension:
+Thread:   <_NSMainThread: 0x103645640>{number = 1, name = main}
+Please file a bug at https://feedbackassistant.apple.com with this warning message and any useful information you can provide.
+2026-11-07 16:27:28.045 xcodebuild[11947:7762397] Logging connecton invalid: <OS_xpc_error: <dictionary: 0x1f756cb60> { count = 1, transaction: 0, voucher = 0x0, contents =
+	"XPCErrorDescription" => <string: 0x1f756cca0> { string cache = 0x0, length = 18, contents = "Connection invalid" }
+}>
+2026-11-07 16:27:28.045 xcodebuild[11947:7762443] Error opening log file (/Users/garv/Library/Logs/CoreSimulator/CoreSimulator.com.apple.dt.xcodebuild.log): Operation not permitted
+[-[SimDiskImageManager _onQueue_checkConnection:]:290] ERROR : simdiskimaged returned error (invalid), marking disconnected.
+[-[SimDiskImageManager init]:226] ERROR : Could not kickstart simdiskimaged; SimDiskImageManager services will not be available: Error Domain=NSPOSIXErrorDomain Code=53 "Software caused connection abort" UserInfo={NSLocalizedDescription=Error returned in reply from CoreSimulatorService: Connection invalid}
+[-[SimDiskImageManager _onQueue_checkConnection:]:290] ERROR : simdiskimaged returned error (invalid), marking disconnected.
+[-[SimServiceContext initWithDeveloperDir:connectionType:error:]:504] WARN  : Unable to discover any Simulator runtimes. Developer Directory is /Applications/Xcode.app/Contents/Developer.
+[-[SimServiceContext initWithDeveloperDir:connectionType:error:]_block_invoke:561] ERROR : Could not get list of trusted mount directories: Error Domain=com.apple.CoreSimulator.SimError Code=410 "The service used to manage runtime disk images (simdiskimaged) crashed or is not responding" UserInfo={NSLocalizedDescription=The service used to manage runtime disk images (simdiskimaged) crashed or is not responding}
+[-[SimServiceContext sendRequest:reply:error:]:2152] ERROR : Unable to deliver request ({
+    request = "notification_subscription";
+    "set_path" = "/Users/garv/Library/Developer/CoreSimulator/Devices";
+}) because we are not connected to CoreSimulatorService.
+2026-11-07 16:27:28.045 xcodebuild[11947:7762396] Error Domain=NSPOSIXErrorDomain Code=61 "Connection refused" UserInfo={NSLocalizedDescription=CoreSimulatorService connection became invalid.  Simulator services will no longer be available.}
+[-[SimServiceContext sendRequest:reply:error:]:2152] ERROR : Unable to deliver request ({
+    request = "notification_subscription";
+    "set_path" = "/Users/garv/Library/Developer/CoreSimulator/Devices";
+}) because we are not connected to CoreSimulatorService.
+2026-11-07 16:27:28.046 xcodebuild[11947:7762438] Error Domain=NSPOSIXErrorDomain Code=61 "Connection refused" UserInfo={NSLocalizedDescription=CoreSimulatorService connection became invalid.  Simulator services will no longer be available.}
+2026-11-07 16:27:28.046 xcodebuild[11947:7762396]  IDESimulatorAvailability: startObservingSimulatorUpdates() FAILED to register SimDeviceSet observer
+2026-11-07 16:27:28.046 xcodebuild[11947:7762438]  iOSSimulator: [SimServiceContext defaultDeviceSetWithError:] returned nil (Error Domain=NSPOSIXErrorDomain Code=61 "Connection refused" UserInfo={NSLocalizedFailureReason=Failed to subscribe to notifications from CoreSimulatorService., NSLocalizedDescription=Failed to initialize simulator device set., NSUnderlyingError=0x75307e8c00 {Error Domain=NSPOSIXErrorDomain Code=61 "Connection refused" UserInfo={NSLocalizedDescription=CoreSimulatorService connection became invalid.  Simulator services will no longer be available.}}}). Simulator device support disabled.
+2026-11-07 16:27:28.183 xcodebuild[11947:7762336] [MT] IDERunDestination: Supported platforms for the buildables in the current scheme is empty.
+2026-11-07 16:27:28.192 xcodebuild[11947:7762336] [MT] IDESchemeActionsInvocationRecord: Device <DVTLocalComputer: 0x7530757100 (My Mac | arm64e)> is missing modelName.
+2026-11-07 16:27:28.195 xcodebuild[11947:7762336] [MT] IDESchemeActionsInvocationRecord: Device <DVTLocalComputer: 0x7530757100 (My Mac | arm64e)> is missing modelName.
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (2 targets)
+    Target 'CloudDriveProject' in project 'CloudDriveProject'
+        ➜ Explicit dependency on target 'CloudDriveFileProviderExtension' in project 'CloudDriveProject'
+    Target 'CloudDriveFileProviderExtension' in project 'CloudDriveProject' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: ae380889d1cc722e07d9c9d12cbaf2af
+Build description path: /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/XCBuildData/ae380889d1cc722e07d9c9d12cbaf2af.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/SDKStatCaches.noindex/macosx27.2-26B118-a7ff82d74745d5ef33555b35c4238456.sdkstatcache
+    cd /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -o /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/SDKStatCaches.noindex/macosx27.2-26B118-a7ff82d74745d5ef33555b35c4238456.sdkstatcache
+Failed to create FS event stream. Considering the cache up-to-date.
+
+ProcessInfoPlistFile /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Products/Debug/CloudDriveFileProviderExtension.appex/Contents/Info.plist /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/CloudDriveFileProviderExtension/Info.plist (in target 'CloudDriveFileProviderExtension' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-infoPlistUtility /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/CloudDriveFileProviderExtension/Info.plist -producttype com.apple.product-type.app-extension -expandbuildsettings -platform macosx -o /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Products/Debug/CloudDriveFileProviderExtension.appex/Contents/Info.plist
+
+SwiftDriver CloudDriveProject normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CloudDriveProject -Onone @/Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -target arm64-apple-macos27.0 -g -module-cache-path /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Products/Debug -F /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Products/Debug -emit-localized-strings -emit-localized-strings-path /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64 -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/SDKStatCaches.noindex/macosx27.2-26B118-a7ff82d74745d5ef33555b35c4238456.sdkstatcache -output-file-map /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject_const_extract_protocols.json -Xcc -iquote -Xcc /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-generated-files.hmap -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-own-target-headers.hmap -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-all-target-headers.hmap -Xcc -iquote -Xcc /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-project-headers.hmap -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Products/Debug/include -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/DerivedSources-normal/arm64 -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/DerivedSources/arm64 -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-Swift.h -working-directory /Users/garv/Projects/helumi/CloudDriveProject -experimental-emit-module-separately -disable-cmo
+
+SwiftCompile normal arm64 Compiling\ APIModels.swift /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/APIModels.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+
+SwiftCompile normal arm64 /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/APIModels.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-SwiftPerFileCompile APIModels.swift
+
+SwiftCompile normal arm64 Compiling\ ContentView.swift /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/ContentView.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+sandbox-exec: sandbox_apply: Operation not permitted
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/ContentView.swift:23:24: error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 21 | struct LoginView: View {
+ 22 |     @ObservedObject var viewModel: AuthViewModel
+ 23 |     @State private var email = ""
+    |                        `- error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 24 |     @State private var password = ""
+ 25 |     @State private var isRegistering = false
+
+SwiftUI.State:1:145: note: 'State()' declared here
+1 | @attached(accessor, names: named(init), named(get), named(set)) @attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) public macro State() = #externalMacro(module: "SwiftUIMacros", type: "StateMacro")
+  |                                                                                                                                                 `- note: 'State()' declared here
+
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/ContentView.swift:24:24: error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 22 |     @ObservedObject var viewModel: AuthViewModel
+ 23 |     @State private var email = ""
+ 24 |     @State private var password = ""
+    |                        `- error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 25 |     @State private var isRegistering = false
+ 26 |     @State private var errorMessage: String?
+
+SwiftUI.State:1:145: note: 'State()' declared here
+1 | @attached(accessor, names: named(init), named(get), named(set)) @attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) public macro State() = #externalMacro(module: "SwiftUIMacros", type: "StateMacro")
+  |                                                                                                                                                 `- note: 'State()' declared here
+
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/ContentView.swift:25:24: error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 23 |     @State private var email = ""
+ 24 |     @State private var password = ""
+ 25 |     @State private var isRegistering = false
+    |                        `- error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 26 |     @State private var errorMessage: String?
+ 27 |     
+
+SwiftUI.State:1:145: note: 'State()' declared here
+1 | @attached(accessor, names: named(init), named(get), named(set)) @attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) public macro State() = #externalMacro(module: "SwiftUIMacros", type: "StateMacro")
+  |                                                                                                                                                 `- note: 'State()' declared here
+
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/ContentView.swift:26:24: error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 24 |     @State private var password = ""
+ 25 |     @State private var isRegistering = false
+ 26 |     @State private var errorMessage: String?
+    |                        `- error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 27 |     
+ 28 |     var body: some View {
+
+SwiftUI.State:1:145: note: 'State()' declared here
+1 | @attached(accessor, names: named(init), named(get), named(set)) @attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) public macro State() = #externalMacro(module: "SwiftUIMacros", type: "StateMacro")
+  |                                                                                                                                                 `- note: 'State()' declared here
+
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/ContentView.swift:23:24: error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 21 | struct LoginView: View {
+ 22 |     @ObservedObject var viewModel: AuthViewModel
+ 23 |     @State private var email = ""
+    |                        `- error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 24 |     @State private var password = ""
+ 25 |     @State private var isRegistering = false
+
+SwiftUI.State:1:145: note: 'State()' declared here
+1 | @attached(accessor, names: named(init), named(get), named(set)) @attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) public macro State() = #externalMacro(module: "SwiftUIMacros", type: "StateMacro")
+  |                                                                                                                                                 `- note: 'State()' declared here
+
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/ContentView.swift:24:24: error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 22 |     @ObservedObject var viewModel: AuthViewModel
+ 23 |     @State private var email = ""
+ 24 |     @State private var password = ""
+    |                        `- error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 25 |     @State private var isRegistering = false
+ 26 |     @State private var errorMessage: String?
+
+SwiftUI.State:1:145: note: 'State()' declared here
+1 | @attached(accessor, names: named(init), named(get), named(set)) @attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) public macro State() = #externalMacro(module: "SwiftUIMacros", type: "StateMacro")
+  |                                                                                                                                                 `- note: 'State()' declared here
+
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/ContentView.swift:25:24: error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 23 |     @State private var email = ""
+ 24 |     @State private var password = ""
+ 25 |     @State private var isRegistering = false
+    |                        `- error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 26 |     @State private var errorMessage: String?
+ 27 |     
+
+SwiftUI.State:1:145: note: 'State()' declared here
+1 | @attached(accessor, names: named(init), named(get), named(set)) @attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) public macro State() = #externalMacro(module: "SwiftUIMacros", type: "StateMacro")
+  |                                                                                                                                                 `- note: 'State()' declared here
+
+
+SwiftCompile normal arm64 /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/ContentView.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-SwiftPerFileCompile ContentView.swift
+
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/ContentView.swift:26:24: error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 24 |     @State private var password = ""
+ 25 |     @State private var isRegistering = false
+ 26 |     @State private var errorMessage: String?
+    |                        `- error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 27 |     
+ 28 |     var body: some View {
+
+SwiftUI.State:1:145: note: 'State()' declared here
+1 | @attached(accessor, names: named(init), named(get), named(set)) @attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) public macro State() = #externalMacro(module: "SwiftUIMacros", type: "StateMacro")
+  |                                                                                                                                                 `- note: 'State()' declared here
+
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/ContentView.swift:34:38: error: cannot find '$email' in scope
+ 32 |                 .bold()
+ 33 |             
+ 34 |             TextField("Email", text: $email)
+    |                                      `- error: cannot find '$email' in scope
+ 35 |                 .textFieldStyle(.roundedBorder)
+ 36 |                 .disableAutocorrection(true)
+
+SwiftCompile normal arm64 Compiling\ CloudDriveProjectApp.swift /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/CloudDriveProjectApp.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+
+SwiftCompile normal arm64 /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/CloudDriveProjectApp.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-SwiftPerFileCompile CloudDriveProjectApp.swift
+
+SwiftCompile normal arm64 Compiling\ Database.swift /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/Database.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+
+SwiftCompile normal arm64 /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/Database.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-SwiftPerFileCompile Database.swift
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ CloudDriveProject (in target 'CloudDriveProject' from project 'CloudDriveProject')
+sandbox-exec: sandbox_apply: Operation not permitted
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/ContentView.swift:23:24: error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 21 | struct LoginView: View {
+ 22 |     @ObservedObject var viewModel: AuthViewModel
+ 23 |     @State private var email = ""
+    |                        `- error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 24 |     @State private var password = ""
+ 25 |     @State private var isRegistering = false
+
+SwiftUI.State:1:145: note: 'State()' declared here
+1 | @attached(accessor, names: named(init), named(get), named(set)) @attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) public macro State() = #externalMacro(module: "SwiftUIMacros", type: "StateMacro")
+  |                                                                                                                                                 `- note: 'State()' declared here
+
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/ContentView.swift:24:24: error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 22 |     @ObservedObject var viewModel: AuthViewModel
+ 23 |     @State private var email = ""
+ 24 |     @State private var password = ""
+    |                        `- error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 25 |     @State private var isRegistering = false
+ 26 |     @State private var errorMessage: String?
+
+SwiftUI.State:1:145: note: 'State()' declared here
+1 | @attached(accessor, names: named(init), named(get), named(set)) @attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) public macro State() = #externalMacro(module: "SwiftUIMacros", type: "StateMacro")
+  |                                                                                                                                                 `- note: 'State()' declared here
+
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/ContentView.swift:25:24: error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 23 |     @State private var email = ""
+ 24 |     @State private var password = ""
+ 25 |     @State private var isRegistering = false
+    |                        `- error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 26 |     @State private var errorMessage: String?
+ 27 |     
+
+SwiftUI.State:1:145: note: 'State()' declared here
+1 | @attached(accessor, names: named(init), named(get), named(set)) @attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) public macro State() = #externalMacro(module: "SwiftUIMacros", type: "StateMacro")
+  |                                                                                                                                                 `- note: 'State()' declared here
+
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/ContentView.swift:26:24: error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 24 |     @State private var password = ""
+ 25 |     @State private var isRegistering = false
+ 26 |     @State private var errorMessage: String?
+    |                        `- error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 27 |     
+ 28 |     var body: some View {
+
+SwiftUI.State:1:145: note: 'State()' declared here
+1 | @attached(accessor, names: named(init), named(get), named(set)) @attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) public macro State() = #externalMacro(module: "SwiftUIMacros", type: "StateMacro")
+  |                                                                                                                                                 `- note: 'State()' declared here
+
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/ContentView.swift:23:24: error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 21 | struct LoginView: View {
+ 22 |     @ObservedObject var viewModel: AuthViewModel
+ 23 |     @State private var email = ""
+    |                        `- error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 24 |     @State private var password = ""
+ 25 |     @State private var isRegistering = false
+
+SwiftUI.State:1:145: note: 'State()' declared here
+1 | @attached(accessor, names: named(init), named(get), named(set)) @attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) public macro State() = #externalMacro(module: "SwiftUIMacros", type: "StateMacro")
+  |                                                                                                                                                 `- note: 'State()' declared here
+
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/ContentView.swift:24:24: error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 22 |     @ObservedObject var viewModel: AuthViewModel
+ 23 |     @State private var email = ""
+ 24 |     @State private var password = ""
+    |                        `- error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 25 |     @State private var isRegistering = false
+ 26 |     @State private var errorMessage: String?
+
+SwiftUI.State:1:145: note: 'State()' declared here
+1 | @attached(accessor, names: named(init), named(get), named(set)) @attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) public macro State() = #externalMacro(module: "SwiftUIMacros", type: "StateMacro")
+  |                                                                                                                                                 `- note: 'State()' declared here
+
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/ContentView.swift:25:24: error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 23 |     @State private var email = ""
+ 24 |     @State private var password = ""
+ 25 |     @State private var isRegistering = false
+    |                        `- error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 26 |     @State private var errorMessage: String?
+ 27 |     
+
+SwiftUI.State:1:145: note: 'State()' declared here
+1 | @attached(accessor, names: named(init), named(get), named(set)) @attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) public macro State() = #externalMacro(module: "SwiftUIMacros", type: "StateMacro")
+  |                                                                                                                                                 `- note: 'State()' declared here
+
+/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/ContentView.swift:26:24: error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 24 |     @State private var password = ""
+ 25 |     @State private var isRegistering = false
+ 26 |     @State private var errorMessage: String?
+    |                        `- error: external macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server' produced malformed response
+ 27 |     
+ 28 |     var body: some View {
+
+SwiftUI.State:1:145: note: 'State()' declared here
+1 | @attached(accessor, names: named(init), named(get), named(set)) @attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) public macro State() = #externalMacro(module: "SwiftUIMacros", type: "StateMacro")
+  |                                                                                                                                                 `- note: 'State()' declared here
+Failed frontend command:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -frontend -emit-module -experimental-skip-non-inlinable-function-bodies-without-types /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/APIClient.swift /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/APIModels.swift /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/CloudDriveProjectApp.swift /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/ContentView.swift /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/Database.swift /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/KeychainService.swift /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/DerivedSources/GeneratedAssetSymbols.swift -target arm64-apple-macos27.0 -module-can-import-version AppKit 2775.20.133 2775.20.133 -module-can-import-version DeveloperToolsSupport 24.20.2 24.20.2 -module-can-import-version SwiftUI 8.1.13.1 8.1.13 -disable-cross-import-overlay-search -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libFoundationMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#FoundationMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libObservationMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#ObservationMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libPreviewsMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#PreviewsMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libSwiftMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#SwiftMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libSwiftUIMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#SwiftUIMacros -disable-implicit-swift-modules -Xcc -fno-implicit-modules -Xcc -fno-implicit-module-maps -explicit-swift-module-map-file /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-dependencies-1.json -Xllvm -aarch64-use-tbi -enable-objc-interop -stack-check -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -I /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Products/Debug -F /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Products/Debug -module-cache-path /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -no-color-diagnostics -Xcc -fno-color-diagnostics -enable-testing -g -debug-info-format\=dwarf -dwarf-version\=5 -swift-version 5 -Onone -D DEBUG -serialize-debugging-options -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -default-isolation\=MainActor -empty-abi-descriptor -validate-clang-modules-once -clang-build-session-file /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -working-directory -Xcc /Users/garv/Projects/helumi/CloudDriveProject -enable-anonymous-context-mangled-names -file-compilation-dir /Users/garv/Projects/helumi/CloudDriveProject -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -Xcc -ivfsstatcache -Xcc /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/SDKStatCaches.noindex/macosx27.2-26B118-a7ff82d74745d5ef33555b35c4238456.sdkstatcache -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -Xcc -iquote -Xcc /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-generated-files.hmap -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-own-target-headers.hmap -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-all-target-headers.hmap -Xcc -iquote -Xcc /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/CloudDriveProject-project-headers.hmap -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Products/Debug/include -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/DerivedSources-normal/arm64 -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/DerivedSources/arm64 -Xcc -I/Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/DerivedSources -Xcc -DDEBUG\=1 -no-auto-bridging-header-chaining -module-name CloudDriveProject -const-gather-protocols-file /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject_const_extract_protocols.json -disable-clang-spi -clang-target arm64-apple-macos27.2 -target-sdk-version 27.2 -target-sdk-name macosx27.2 -in-process-plugin-server-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/libSwiftInProcPluginServer.dylib -emit-module-doc-path /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.swiftdoc -emit-module-source-info-path /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.swiftsourceinfo -emit-objc-header-path /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-Swift.h -serialize-diagnostics-path /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-primary-emit-module.dia -emit-dependencies-path /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-primary-emit-module.d -o /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.swiftmodule -emit-abi-descriptor-path /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject.abi.json
+
+SwiftCompile normal arm64 (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    
+
+SwiftCompile normal arm64 Compiling\ GeneratedAssetSymbols.swift /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+
+SwiftCompile normal arm64 /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-SwiftPerFileCompile GeneratedAssetSymbols.swift
+
+SwiftCompile normal arm64 Compiling\ KeychainService.swift /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/KeychainService.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+
+SwiftCompile normal arm64 /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/KeychainService.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-SwiftPerFileCompile KeychainService.swift
+
+SwiftCompile normal arm64 Compiling\ APIClient.swift /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/APIClient.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+
+SwiftCompile normal arm64 /Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/APIClient.swift (in target 'CloudDriveProject' from project 'CloudDriveProject')
+    cd /Users/garv/Projects/helumi/CloudDriveProject
+    builtin-SwiftPerFileCompile APIClient.swift
+
+PruneExplicitPrecompiledModules /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/SDKExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/garv/Projects/helumi/CloudDriveProject/.build/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	SwiftEmitModule normal arm64 Emitting\ module\ for\ CloudDriveProject (in target 'CloudDriveProject' from project 'CloudDriveProject')
+	SwiftCompile normal arm64 (in target 'CloudDriveProject' from project 'CloudDriveProject')
+	Building project CloudDriveProject with scheme CloudDriveProject and configuration Debug
+(3 failures)

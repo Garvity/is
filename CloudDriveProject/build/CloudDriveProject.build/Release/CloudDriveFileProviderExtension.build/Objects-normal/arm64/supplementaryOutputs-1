@@ -1,0 +1,12 @@
+{
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveFileProviderExtension/CacheManager.swift" : {
+    "abi-baseline-json" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension.abi.json",
+    "const-values" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension-primary.swiftconstvalues",
+    "dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension-primary.d",
+    "diagnostics" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension-primary.dia",
+    "objc-header" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension-Swift.h",
+    "swiftdoc" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension.swiftdoc",
+    "swiftmodule" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension.swiftmodule",
+    "swiftsourceinfo" : "/Users/garv/Projects/helumi/CloudDriveProject/build/CloudDriveProject.build/Release/CloudDriveFileProviderExtension.build/Objects-normal/arm64/CloudDriveFileProviderExtension.swiftsourceinfo"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildOnly"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "24f022b407f6ef4b7e622afcbd3af225564af6a79d2f4d29619a8e4fdfbf196d"
+    }
+  ],
+  "containerPath" : "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "hostTargetedPlatform" : null,
+      "platform" : "macosx",
+      "sdk" : "macosx27.2",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Products",
+      "derivedDataPath" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild",
+      "indexDataStoreFolderPath" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "commandLine" : {
+        "table" : {
+          "CODE_SIGNING_ALLOWED" : "NO"
+        }
+      },
+      "synthesized" : {
+        "table" : {
+          "ACTION" : "build",
+          "COLOR_DIAGNOSTICS" : "YES",
+          "diagnostic_message_length" : "130",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "YES",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

@@ -1,0 +1,569 @@
+import Foundation
+import Security
+import CryptoKit
+
+// MARK: - Keychain Item Keys
+
+private enum KeychainItemKey: String {
+    case rootKeyWrapped = "com.example.clouddrive.root_key_wrapped"
+    case recoveryWrapped = "com.example.clouddrive.recovery_wrapped"
+    case userSalt = "com.example.clouddrive.user_salt"
+    case recoverySalt = "com.example.clouddrive.recovery_salt"
+}
+
+// MARK: - Keychain Manager
+
+public final class KeychainManager {
+    // Shared access group for app and extension
+    private let accessGroup: String
+
+    // Service name for keychain items
+    private let serviceName = "com.example.clouddrive.keychain"
+
+    // Team ID - this would normally come from the project config
+    // For now using placeholder; replace with actual Team ID
+    public static let teamID = "KPUSCA92ZM"
+
+    // MARK: - Initialization
+
+    public init(accessGroup: String? = nil) {
+        // Use provided access group or construct from team ID
+        self.accessGroup = accessGroup ?? KeychainManager.teamID + ".com.example.clouddrive"
+        KeychainManager.shared = self
+    }
+
+    // Prevent deinit from removing items - keychain persists
+
+    // MARK: - Shared Instance
+
+    public static var shared = KeychainManager()
+
+    // MARK: - Root Key Operations
+
+    /// Stores the KEK-wrapped root key in the keychain
+    /// - Parameter wrappedKey: The KEK-wrapped SymmetricKey data
+    public func storeRootKeyWrapped(_ wrappedKey: Data) throws {
+        let query: [String: Any] = [
+            kSecClass as String: kSecClassGenericPassword,
+            kSecAttrService as String: serviceName,
+            kSecAttrAccount as String: KeychainItemKey.rootKeyWrapped.rawValue,
+            kSecValueData as String: wrappedKey,
+            kSecAttrAccessible as String: kSecAttrAccessibleWhenUnlockedThisDeviceOnly,
+            kSecAttrAccessGroup as String: accessGroup,
+            kSecUseDataProtectionKeychain as String: true
+        ]
+
+        // Delete existing item first
+        SecItemDelete(query as CFDictionary)
+
+        let status = SecItemAdd(query as CFDictionary, nil)
+        guard status == errSecSuccess else {
+            throw KeychainError.saveFailed(status: status)
+        }
+    }
+
+    /// Retrieves the KEK-wrapped root key from the keychain
+    /// - Returns: The wrapped key data, or nil if not found
+    public func retrieveRootKeyWrapped() -> Data? {
+        let query: [String: Any] = [
+            kSecClass as String: kSecClassGenericPassword,
+            kSecAttrService as String: serviceName,
+            kSecAttrAccount as String: KeychainItemKey.rootKeyWrapped.rawValue,
+            kSecReturnData as String: true,
+            kSecMatchLimit as String: kSecMatchLimitOne,
+            kSecAttrAccessGroup as String: accessGroup,
+            kSecUseDataProtectionKeychain as String: true
+        ]
+
+        var dataTypeRef: AnyObject?
+        let status = SecItemCopyMatching(query as CFDictionary, &dataTypeRef)
+
+        guard status == errSecSuccess,
+              let data = dataTypeRef as? Data
+        else {
+            return nil
+        }
+
+        return data
+    }
+
+    /// Removes the KEK-wrapped root key from the keychain
+    /// - Returns: Whether the removal was successful
+    public func removeRootKeyWrapped() -> Bool {
+        let query: [String: Any] = [
+            kSecClass as String: kSecClassGenericPassword,
+            kSecAttrService as String: serviceName,
+            kSecAttrAccount as String: KeychainItemKey.rootKeyWrapped.rawValue,
+            kSecAttrAccessGroup as String: accessGroup,
+            kSecUseDataProtectionKeychain as String: true
+        ]
+
+        let status = SecItemDelete(query as CFDictionary)
+        return status == errSecSuccess || status == errSecItemNotFound
+    }
+
+    // MARK: - Recovery Wrapped Root Key Operations
+
+    /// Stores the recovery-wrapped root key in the keychain
+    /// - Parameter wrappedKey: The recovery-wrapped root key data
+    public func storeRecoveryWrappedRootKey(_ wrappedKey: Data) throws {
+        let query: [String: Any] = [
+            kSecClass as String: kSecClassGenericPassword,
+            kSecAttrService as String: serviceName,
+            kSecAttrAccount as String: KeychainItemKey.recoveryWrapped.rawValue,
+            kSecValueData as String: wrappedKey,
+            kSecAttrAccessible as String: kSecAttrAccessibleWhenUnlockedThisDeviceOnly,
+            kSecAttrAccessGroup as String: accessGroup,
+            kSecUseDataProtectionKeychain as String: true
+        ]
+
+        SecItemDelete(query as CFDictionary)
+        let status = SecItemAdd(query as CFDictionary, nil)
+        guard status == errSecSuccess else {
+            throw KeychainError.saveFailed(status: status)
+        }
+    }
+
+    /// Retrieves the recovery-wrapped root key from the keychain
+    /// - Returns: The wrapped key data, or nil if not found
+    public func retrieveRecoveryWrappedRootKey() -> Data? {
+        let query: [String: Any] = [
+            kSecClass as String: kSecClassGenericPassword,
+            kSecAttrService as String: serviceName,
+            kSecAttrAccount as String: KeychainItemKey.recoveryWrapped.rawValue,
+            kSecReturnData as String: true,
+            kSecMatchLimit as String: kSecMatchLimitOne,
+            kSecAttrAccessGroup as String: accessGroup,
+            kSecUseDataProtectionKeychain as String: true
+        ]
+
+        var dataTypeRef: AnyObject?
+        let status = SecItemCopyMatching(query as CFDictionary, &dataTypeRef)
+
+        guard status == errSecSuccess,
+              let data = dataTypeRef as? Data
+        else {
+            return nil
+        }
+
+        return data
+    }
+
+    /// Removes the recovery-wrapped root key from the keychain
+    /// - Returns: Whether the removal was successful
+    public func removeRecoveryWrappedRootKey() -> Bool {
+        let query: [String: Any] = [
+            kSecClass as String: kSecClassGenericPassword,
+            kSecAttrService as String: serviceName,
+            kSecAttrAccount as String: KeychainItemKey.recoveryWrapped.rawValue,
+            kSecAttrAccessGroup as String: accessGroup,
+            kSecUseDataProtectionKeychain as String: true
+        ]
+
+        let status = SecItemDelete(query as CFDictionary)
+        return status == errSecSuccess || status == errSecItemNotFound
+    }
+
+    // MARK: - User Salt Operations
+
+    /// Stores the Argon2id user salt in the keychain
+    /// - Parameter salt: The user salt data
+    public func storeUserSalt(_ salt: Data) throws {
+        let query: [String: Any] = [
+            kSecClass as String: kSecClassGenericPassword,
+            kSecAttrService as String: serviceName,
+            kSecAttrAccount as String: KeychainItemKey.userSalt.rawValue,
+            kSecValueData as String: salt,
+            kSecAttrAccessible as String: kSecAttrAccessibleWhenUnlockedThisDeviceOnly,
+            kSecAttrAccessGroup as String: accessGroup,
+            kSecUseDataProtectionKeychain as String: true
+        ]
+
+        SecItemDelete(query as CFDictionary)
+        let status = SecItemAdd(query as CFDictionary, nil)
+        guard status == errSecSuccess else {
+            throw KeychainError.saveFailed(status: status)
+        }
+    }
+
+    /// Retrieves the user salt from the keychain
+    /// - Returns: The salt data, or nil if not found
+    public func retrieveUserSalt() -> Data? {
+        let query: [String: Any] = [
+            kSecClass as String: kSecClassGenericPassword,
+            kSecAttrService as String: serviceName,
+            kSecAttrAccount as String: KeychainItemKey.userSalt.rawValue,
+            kSecReturnData as String: true,
+            kSecMatchLimit as String: kSecMatchLimitOne,
+            kSecAttrAccessGroup as String: accessGroup,
+            kSecUseDataProtectionKeychain as String: true
+        ]
+
+        var dataTypeRef: AnyObject?
+        let status = SecItemCopyMatching(query as CFDictionary, &dataTypeRef)
+
+        guard status == errSecSuccess,
+              let data = dataTypeRef as? Data
+        else {
+            return nil
+        }
+
+        return data
+    }
+
+    /// Removes the user salt from the keychain
+    /// - Returns: Whether the removal was successful
+    public func removeUserSalt() -> Bool {
+        let query: [String: Any] = [
+            kSecClass as String: kSecClassGenericPassword,
+            kSecAttrService as String: serviceName,
+            kSecAttrAccount as String: KeychainItemKey.userSalt.rawValue,
+            kSecAttrAccessGroup as String: accessGroup,
+            kSecUseDataProtectionKeychain as String: true
+        ]
+
+        let status = SecItemDelete(query as CFDictionary)
+        return status == errSecSuccess || status == errSecItemNotFound
+    }
+
+    // MARK: - Recovery Salt Operations
+
+    /// Stores the recovery salt in the keychain
+    /// - Parameter salt: The recovery salt data
+    public func storeRecoverySalt(_ salt: Data) throws {
+        let query: [String: Any] = [
+            kSecClass as String: kSecClassGenericPassword,
+            kSecAttrService as String: serviceName,
+            kSecAttrAccount as String: KeychainItemKey.recoverySalt.rawValue,
+            kSecValueData as String: salt,
+            kSecAttrAccessible as String: kSecAttrAccessibleWhenUnlockedThisDeviceOnly,
+            kSecAttrAccessGroup as String: accessGroup,
+            kSecUseDataProtectionKeychain as String: true
+        ]
+
+        SecItemDelete(query as CFDictionary)
+        let status = SecItemAdd(query as CFDictionary, nil)
+        guard status == errSecSuccess else {
+            throw KeychainError.saveFailed(status: status)
+        }
+    }
+
+    /// Retrieves the recovery salt from the keychain
+    /// - Returns: The recovery salt data, or nil if not found
+    public func retrieveRecoverySalt() -> Data? {
+        let query: [String: Any] = [
+            kSecClass as String: kSecClassGenericPassword,
+            kSecAttrService as String: serviceName,
+            kSecAttrAccount as String: KeychainItemKey.recoverySalt.rawValue,
+            kSecReturnData as String: true,
+            kSecMatchLimit as String: kSecMatchLimitOne,
+            kSecAttrAccessGroup as String: accessGroup,
+            kSecUseDataProtectionKeychain as String: true
+        ]
+
+        var dataTypeRef: AnyObject?
+        let status = SecItemCopyMatching(query as CFDictionary, &dataTypeRef)
+
+        guard status == errSecSuccess,
+              let data = dataTypeRef as? Data
+        else {
+            return nil
+        }
+
+        return data
+    }
+
+    /// Removes the recovery salt from the keychain
+    /// - Returns: Whether the removal was successful
+    public func removeRecoverySalt() -> Bool {
+        let query: [String: Any] = [
+            kSecClass as String: kSecClassGenericPassword,
+            kSecAttrService as String: serviceName,
+            kSecAttrAccount as String: KeychainItemKey.recoverySalt.rawValue,
+            kSecAttrAccessGroup as String: accessGroup,
+            kSecUseDataProtectionKeychain as String: true
+        ]
+
+        let status = SecItemDelete(query as CFDictionary)
+        return status == errSecSuccess || status == errSecItemNotFound
+    }
+
+    // MARK: - Keychain Error Handling
+
+    public enum KeychainError: Error {
+        case saveFailed(status: OSStatus)
+        case retrieveFailed(status: OSStatus)
+        case deleteFailed(status: OSStatus)
+        case itemNotFound
+
+        public var localizedDescription: String {
+            switch self {
+            case .saveFailed(let status):
+                return "Failed to save keychain item: \(status)"
+            case .retrieveFailed(let status):
+                return "Failed to retrieve keychain item: \(status)"
+            case .deleteFailed(let status):
+                return "Failed to delete keychain item: \(status)"
+            case .itemNotFound:
+                return "Keychain item not found"
+            }
+        }
+    }
+}
+
+// MARK: - SymmetricKey Data Extension (at file scope)
+
+private extension SymmetricKey {
+    var dataRepresentation: Data {
+        // Get raw bytes of the symmetric key
+        return self.withUnsafeBytes { Data($0) }
+    }
+}
+
+// MARK: - KeyManager
+
+/// Manages the root encryption key with KEK wrapping and recovery mechanisms.
+/// Integrates with KeychainManager for secure storage with App Group access.
+public final class KeyManager {
+    // Private init for singleton
+    private init() {}
+
+    // Shared instance
+    public static let shared = KeyManager()
+
+    // Dependencies
+    private let keychain = KeychainManager.shared
+
+    // MARK: - Key States
+
+    /// The KEK (Key Encryption Key) used to wrap/unwrap the root key.
+    /// In production, this would be derived from user authentication (e.g., password + salt).
+    private var kek: SymmetricKey {
+        // Derive KEK from user password or biometric auth
+        let saltData = keychain.retrieveUserSalt() ?? Data(count: 16)
+        let kekMaterial = SHA256.hash(data: saltData + "clouddrive_kek_salt".data(using: .utf8)!)
+        return SymmetricKey(data: Data(kekMaterial))
+    }
+
+    /// The root key that encrypts/decrypts user data.
+    /// This is stored wrapped (encrypted) in the keychain.
+    private func unwrappedRootKey() throws -> SymmetricKey {
+        // Try to retrieve wrapped root key first
+        if let wrappedData = keychain.retrieveRootKeyWrapped() {
+            return try unwrapRootKey(wrapped: wrappedData)
+        }
+
+        // If no wrapped key exists, derive a new one and wrap it
+        let newKey = SymmetricKey(size: .bits256)
+        let wrapped = try wrapRootKey(key: newKey)
+        try keychain.storeRootKeyWrapped(wrapped)
+        return newKey
+    }
+
+    private func unwrapRootKey(wrapped: Data) throws -> SymmetricKey {
+        // Unwrap the key using KEK with AES-GCM
+        guard wrapped.count >= 16 else {
+            throw KeychainError.itemNotFound
+        }
+
+        let ciphertext = wrapped.prefix(wrapped.count - 16)
+        let tag = wrapped.suffix(16)
+
+        let nonce = AES.GCM.Nonce()
+        let sealedBox = try AES.GCM.SealedBox(
+            nonce: nonce,
+            ciphertext: ciphertext,
+            tag: tag
+        )
+
+        let unwrapped = try AES.GCM.open(sealedBox, using: kek)
+        return SymmetricKey(data: unwrapped)
+    }
+
+    private func wrapRootKey(key: SymmetricKey) throws -> Data {
+        // Wrap the key using KEK with AES-GCM
+        let sealedBox = try AES.GCM.seal(key.dataRepresentation, using: kek, nonce: AES.GCM.Nonce())
+        var result = Data()
+        result.append(sealedBox.ciphertext)
+        result.append(sealedBox.tag)
+        return result
+    }
+
+    /// The recovery-wrapped root key, used for mnemonic-based recovery.
+    private func getRecoveryWrappedRootKey() throws -> SymmetricKey? {
+        if let wrappedData = keychain.retrieveRecoveryWrappedRootKey() {
+            return try unwrapRecoveryRootKey(wrapped: wrappedData, wrapKey: kek)
+        }
+        return nil
+    }
+
+    private func wrapRootKeyForRecovery(key: SymmetricKey) throws -> Data {
+        // Wrap the root key for recovery using the recovery wrap key context
+        let sealedBox = try AES.GCM.seal(key.dataRepresentation, using: kek, nonce: AES.GCM.Nonce())
+        var result = Data()
+        result.append(sealedBox.ciphertext)
+        result.append(sealedBox.tag)
+        return result
+    }
+
+    private func unwrapRecoveryRootKey(wrapped: Data, wrapKey: SymmetricKey) throws -> SymmetricKey {
+        // Unwrap the recovery-wrapped root key
+        guard wrapped.count >= 16 else {
+            throw KeychainError.itemNotFound
+        }
+        let ciphertext = wrapped.prefix(wrapped.count - 16)
+        let tag = wrapped.suffix(16)
+
+        let nonce = AES.GCM.Nonce()
+        let sealedBox = try AES.GCM.SealedBox(
+            nonce: nonce,
+            ciphertext: ciphertext,
+            tag: tag
+        )
+
+        return try AES.GCM.open(sealedBox, using: wrapKey)
+    }
+
+    // MARK: - Key Access
+
+    /// Returns the root key, creating/wrapping it if needed.
+    /// - Throws: KeychainError if operations fail
+    public func getRootKey() throws -> SymmetricKey {
+        return try unwrappedRootKey()
+    }
+
+    /// Re-wraps the root key with a new KEK (e.g., after password change).
+    /// Call this after re-deriving the KEK (e.g., on password change).
+    /// - Parameter newKEK: The new Key Encryption Key
+    /// - Throws: KeychainError if operations fail
+    public func rewrapRootKey(withNewKEK newKEK: SymmetricKey) throws {
+        // Get the current unwrapped root key
+        let currentRootKey = try unwrappedRootKey()
+
+        // Re-wrap with the new KEK
+        let sealedBox = try AES.GCM.seal(currentRootKey.dataRepresentation, using: newKEK, nonce: AES.GCM.Nonce())
+        var wrappedResult = Data()
+        wrappedResult.append(sealedBox.ciphertext)
+        wrappedResult.append(sealedBox.tag)
+
+        // Store the newly wrapped key
+        try keychain.storeRootKeyWrapped(wrappedResult)
+    }
+
+    /// Sets up recovery with a BIP39 mnemonic.
+    /// - Parameter mnemonic: The 24-word BIP39 mnemonic phrase
+    /// - Returns: The recovery key hash (SHA-256 of mnemonic as Data) and recovery wrap key
+    public func setupRecovery(withMnemonic mnemonic: String) throws -> (recoveryKeyHash: Data, recoveryWrapKey: SymmetricKey) {
+        // 1. Compute recovery key hash = SHA-256(mnemonic)
+        let recoveryKeyHash = SHA256.hash(data: mnemonic.data(using: .utf8) ?? Data())
+        let recoveryKeyHashData = Data(recoveryKeyHash)  // Convert Digest to Data
+
+        // 2. Derive recovery wrap key via HKDF from the mnemonic
+        let ikm = mnemonic.data(using: .utf8)!
+        let salt = Data(count: 0) // Empty salt for HKDF-Extract
+        let info = "clouddrive_recovery_wrap_key".data(using: .utf8)!
+        let recoveryWrapKey = try deriveRecoveryWrapKeyHKDF(ikm: ikm, salt: salt, info: info)
+
+        // 3. Store the recovery wrapped root key if we have a root key
+        do {
+            let rootKey = try unwrappedRootKey()
+            let wrappedForRecovery = try wrapRootKeyForRecoveryWithWrapKey(key: rootKey, recoveryWrapKey: recoveryWrapKey)
+            try keychain.storeRecoveryWrappedRootKey(wrappedForRecovery)
+        } catch {
+            print("Failed to store recovery wrapped key during setup: \(error)")
+        }
+
+        // 4. Store recovery key hash and salt server-side (outside scope of keychain)
+        // The recovery_salt is stored server-side
+
+        return (recoveryKeyHash: recoveryKeyHashData, recoveryWrapKey: recoveryWrapKey)
+    }
+
+    /// Attempts to recover the root key using a BIP39 mnemonic.
+    /// - Parameter mnemonic: The 24-word BIP39 mnemonic phrase
+    /// - Returns: The recovered root key, or nil if recovery fails
+    public func recoverRootKey(withMnemonic mnemonic: String) -> SymmetricKey? {
+        do {
+            // 1. Compute recovery key hash
+            let recoveryKeyHash = SHA256.hash(data: mnemonic.data(using: .utf8) ?? Data())
+
+            // 2. Derive recovery wrap key via HKDF
+            let ikm = mnemonic.data(using: .utf8)!
+            let salt = Data(count: 0)
+            let info = "clouddrive_recovery_wrap_key".data(using: .utf8)!
+            let recoveryWrapKey = try deriveRecoveryWrapKeyHKDF(ikm: ikm, salt: salt, info: info)
+
+            // 3. Try to unwrap the root key using the recovery wrap key
+            if let wrappedData = keychain.retrieveRecoveryWrappedRootKey() {
+                let recoveredKey = try unwrapRecoveryRootKey(wrapped: wrappedData, wrapKey: recoveryWrapKey)
+                return recoveredKey
+            }
+
+            // 4. If no recovery wrapped key exists, we can't recover
+            return nil
+        } catch {
+            print("Recovery failed: \(error)")
+            return nil
+        }
+    }
+
+    /// Changes the KEK and re-wraps the root key.
+    /// This is called when the user changes their password.
+    /// - Parameter newKEK: The new Key Encryption Key
+    /// - Throws: KeychainError if operations fail
+    public func changeKEK(to newKEK: SymmetricKey) throws {
+        // Get the current unwrapped root key
+        let currentRootKey = try unwrappedRootKey()
+
+        // Re-wrap with the new KEK
+        let sealedBox = try AES.GCM.seal(currentRootKey.dataRepresentation, using: newKEK, nonce: AES.GCM.Nonce())
+        var wrappedResult = Data()
+        wrappedResult.append(sealedBox.ciphertext)
+        wrappedResult.append(sealedBox.tag)
+
+        // Store the newly wrapped key
+        try keychain.storeRootKeyWrapped(wrappedResult)
+    }
+
+    /// Rotates the root key, generating a new one and re-wrapping it.
+    /// - Returns: The new root key
+    /// - Throws: KeychainError if operations fail
+    public func rotateRootKey() throws -> SymmetricKey {
+        // Generate a new root key
+        let newRootKey = SymmetricKey(size: .bits256)
+
+        // Wrap it with the current KEK
+        let wrapped = try wrapRootKey(key: newRootKey)
+
+        // Store the wrapped key
+        try keychain.storeRootKeyWrapped(wrapped)
+
+        return newRootKey
+    }
+
+    // MARK: - Private Wrapping/Unwrapping Methods
+
+    private func wrapRootKeyForRecoveryWithWrapKey(key: SymmetricKey, recoveryWrapKey: SymmetricKey) throws -> Data {
+        // Wrap the root key with the recovery wrap key
+        let sealedBox = try AES.GCM.seal(key.dataRepresentation, using: recoveryWrapKey, nonce: AES.GCM.Nonce())
+        var result = Data()
+        result.append(sealedBox.ciphertext)
+        result.append(sealedBox.tag)
+        return result
+    }
+}
+
+// MARK: - HKDF Helper
+
+private func deriveRecoveryWrapKeyHKDF(ikm: Data, salt: Data, info: Data) throws -> SymmetricKey {
+    // Simplified HKDF using CryptoKit
+    // HKDF-Extract: PRK = HMAC-Hash(IKM, salt)
+    let prk = HMAC<SHA256>.authenticationCode(for: ikm, using: kek)
+
+    // HKDF-Expand: T(1) = HMAC-Hash(PRK, info || 1)
+    let t1 = HMAC<SHA256>.authenticationCode(for: Data(prk) + info + Data([0x01]), using: kek)
+
+    // Take first 32 bytes as the key
+    let keyData = Data(t1.prefix(32))
+    return SymmetricKey(data: keyData)
+}

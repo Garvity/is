@@ -1,0 +1,79 @@
+{
+  "" : {
+    "diagnostics" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-primary.dia",
+    "emit-module-dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-primary-emit-module.dia",
+    "pch" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProject-primary.swiftdeps"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/APIClient.swift" : {
+    "const-values" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/APIClient.swiftconstvalues",
+    "dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/APIClient.d",
+    "diagnostics" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/APIClient.dia",
+    "index-unit-output-path" : "/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/APIClient.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/APIClient.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/APIClient.o",
+    "swift-dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/APIClient.swiftdeps",
+    "swiftmodule" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/APIClient~partial.swiftmodule"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/APIModels.swift" : {
+    "const-values" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/APIModels.swiftconstvalues",
+    "dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/APIModels.d",
+    "diagnostics" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/APIModels.dia",
+    "index-unit-output-path" : "/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/APIModels.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/APIModels.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/APIModels.o",
+    "swift-dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/APIModels.swiftdeps",
+    "swiftmodule" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/APIModels~partial.swiftmodule"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/CloudDriveProjectApp.swift" : {
+    "const-values" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProjectApp.swiftconstvalues",
+    "dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProjectApp.d",
+    "diagnostics" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProjectApp.dia",
+    "index-unit-output-path" : "/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProjectApp.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProjectApp.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProjectApp.o",
+    "swift-dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProjectApp.swiftdeps",
+    "swiftmodule" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/CloudDriveProjectApp~partial.swiftmodule"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/ContentView.swift" : {
+    "const-values" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/Database.swift" : {
+    "const-values" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/Database.swiftconstvalues",
+    "dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/Database.d",
+    "diagnostics" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/Database.dia",
+    "index-unit-output-path" : "/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/Database.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/Database.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/Database.o",
+    "swift-dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/Database.swiftdeps",
+    "swiftmodule" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/Database~partial.swiftmodule"
+  },
+  "/Users/garv/Projects/helumi/CloudDriveProject/CloudDriveProject/KeychainService.swift" : {
+    "const-values" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/KeychainService.swiftconstvalues",
+    "dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/KeychainService.d",
+    "diagnostics" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/KeychainService.dia",
+    "index-unit-output-path" : "/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/KeychainService.o",
+    "llvm-bc" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/KeychainService.bc",
+    "object" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/KeychainService.o",
+    "swift-dependencies" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/KeychainService.swiftdeps",
+    "swiftmodule" : "/Users/garv/Projects/helumi/CloudDriveProject/.build/VerifiedBuild/Build/Intermediates.noindex/CloudDriveProject.build/Debug/CloudDriveProject.build/Objects-normal/arm64/KeychainService~partial.swiftmodule"
+  }
+}
